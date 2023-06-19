@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    /* background-color: #55c4e9; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: url(mountain.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navlinks{
+    position: absolute;
+    list-style-type:none;
+    display:flex;
+    height: 30px ;
+    width:100% ;
+    margin-top: 7px;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder;
+    font-size: large;
+}
+.navlinks li{
+    background-color:rgba(0, 0, 0, 0.358);
+    color: white;
+    padding: 10px 70px;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.dd{
+    display: none;
+
+}
+.navcontainer .navlinks li:hover .dd{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -55px;
+}
+.navcontainer .navlinks li:hover .dd ul{
+    display: block;
+    margin: 1px;
+}
+.navcontainer .navlinks li:hover .dd ul li{
+    margin-top: 0px;
+}
+.navcontainer .navlinks li:hover .dd ul li:hover{
+    background-color: rgb(52, 170, 52);
+    color: white;
+}
